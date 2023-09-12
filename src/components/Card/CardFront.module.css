@@ -1,0 +1,157 @@
+.bg {
+  background-color: #6244fa;
+  position: relative;
+  aspect-ratio: 16 / 9;
+  height: 250px;
+  border-radius: 20px;
+  z-index: 10;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.padding {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  position: relative;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.ellipse-orange {
+  position: absolute;
+  height: 184.802px;
+  aspect-ratio: 16/9;
+  transform: rotate(-34.616deg);
+  flex-shrink: 0;
+  border-radius: 100%;
+  background: #ea7167;
+  top: -10%;
+  right: -20%;
+  overflow: hidden;
+  z-index: 5;
+}
+
+.ellipse-pink {
+  height: 100px;
+  aspect-ratio: 20 / 9;
+  transform: rotate(-38.588deg);
+  flex-shrink: 0;
+  background-color: #CF56BD;
+  border-radius: 100%;
+  position: absolute;
+  z-index: 5;
+}
+
+.ellipse-pink1 {
+  left: 40%;
+}
+
+.ellipse-pink2 {
+  left: 70%;
+  top: 35%;
+  z-index: 0;
+}
+
+.ellipse-blue {
+  height: 200px;
+  aspect-ratio: 20 / 9;
+  transform: rotate(-41.78deg);
+  border-radius: 100%;
+background: #5E90E6;
+position: absolute;
+top: 60%;
+left: 10%;
+z-index: 10;
+}
+
+.ellipse-violet{
+  aspect-ratio: 20 / 9;
+height: 150px;
+transform: rotate(-45.651deg);
+flex-shrink: 0;
+border-radius: 100%;
+background: #620594;
+position: absolute;
+}
+
+.ellipse-vio1 {
+  top : 70%;
+  left: -20%;
+}
+
+.ellipse-vio2 {
+  top : 70%;
+  left: 60%;
+}
+
+.shadow {
+  position: absolute;
+  width: 100%;
+  height: 110%;
+  fill: rgba(255, 255, 255, 0.01);
+backdrop-filter: blur(40.5px);
+  z-index: 10;
+  margin-top: -60%;
+}
+
+.top{
+  position: relative;
+  z-index: 20;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.circle-full {
+  width: 50px;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  background-color: #fff;
+}
+
+.circle-hollow {
+  box-sizing: border-box;
+  width: 30px;
+height: 30px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 1.5px solid white;
+}
+
+.bottom {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  z-index: 20;
+  justify-content: space-between;
+}
+
+.acc{
+  color: #FFF;
+font-family: Inter;
+font-size: 26px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: 4.68px;
+flex-basis: 1;
+}
+
+.details {
+  color: #FFF;
+font-family: Roboto;
+font-size: 13px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: 2.47px;
+}
+
+@media only screen and (max-width: 768px) {
+  .bg{
+    margin-top: -130px;
+  }
+}

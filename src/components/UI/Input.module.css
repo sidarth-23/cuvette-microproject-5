@@ -1,0 +1,15 @@
+.input{
+  border: 1.5px solid rgba(128, 128, 128, 0.500);
+  border-radius: 0.5rem;
+  font-size: 1.5rem;
+  outline: none;
+  transition: 0.5s ease-out;
+}
+
+.input:focus{
+  border: 1.5px solid rgba(225, 104, 225, 0.5);
+}
+
+.error{
+  border: 1.5px solid rgba(255, 0, 0, 0.500);
+}

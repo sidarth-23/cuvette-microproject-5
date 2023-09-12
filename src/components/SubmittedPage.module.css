@@ -1,0 +1,54 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  z-index: 20;
+  gap: 15px;
+  width: 60%;
+}
+
+.success {
+  background-image: linear-gradient(
+    0deg,
+    rgba(14, 76, 98, 1) 0%,
+    rgba(116, 0, 255, 1) 100%
+  );
+  box-sizing: border-box;
+  padding: 20px;
+  border-radius: 50%;
+}
+
+.thanks {
+  text-align: center;
+}
+
+.thanks > h1 {
+  font-family: "Inter";
+  font-weight: 500;
+  color: #220930;
+}
+
+.thanks > p {
+  font-family: "Inter";
+  font-weight: 500;
+  color: gray;
+  letter-spacing: 1px;
+}
+
+.btn {
+  border-radius: 6px;
+  background: #220930;
+  height: 50px;
+  border: none;
+  color: #fff;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.16px;
+  transition: 1s ease-in-out;
+  width: 100%;
+}

@@ -1,0 +1,106 @@
+.bg {
+  background-image: linear-gradient(107deg, #fff 0%, #d9d9d9 103.94%);
+  backdrop-filter: drop-shadow(10px 11px 62px rgba(0, 0, 0, 0.19));
+  position: relative;
+  aspect-ratio: 16 / 9;
+  height: 250px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.swipe {
+  width: 100%;
+  height: 15%;
+  background-color: black;
+}
+
+.cvv-area {
+  border-radius: 4px;
+  background: #adb6bf;
+  width: 60%;
+  box-sizing: border-box;
+  padding: 2px;
+  text-align: end;
+}
+
+.cvv-text {
+  color: #fff;
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 3.29px;
+}
+
+.line-area {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  min-height: 20px;
+  gap: 10px
+}
+
+.reverse {
+  flex-direction: row-reverse;
+}
+
+.line-area > div {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.row-1 > div {
+    border-radius: 4px;
+  background: #aeb5bd;
+  height: 4.533px;
+}
+
+.row-2 > div{
+      border-radius: 4px;
+  background: #aeb5bd;
+  height: 4.533px;
+}
+
+.line-area > div {
+ width: 100%;
+}
+
+.l1 {
+  width: 60%;
+}
+
+.l2 {
+  width: 10%;
+}
+
+.l3 {
+  width: 10%;
+}
+
+.l4 {
+  width: 5%;
+}
+
+.l5 {
+  width: 10%;
+}
+
+.l6 {
+  width: 30%;
+}
+
+.l7 {
+  width: 25%;
+}
+
+.l8 {
+  width: 5%;
+}
+
