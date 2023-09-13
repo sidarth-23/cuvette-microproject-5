@@ -1,8 +1,8 @@
 import { useContext, useEffect, useState } from "react"
 
-import useInput from "../hooks/use-input"
-import FormContext from "../store/form-context"
-import Input from "./UI/Input"
+import useInput from "../../hooks/use-input"
+import FormContext from "../../store/form-context"
+import Input from "../UI/Input"
 
 import classes from "./Form.module.css"
 
@@ -117,13 +117,12 @@ const UserForm = () => {
     reset: cvvReset,
   } = useInput(cvvValidate, "cvv")
 
-  const [allIsValid, setAllIsValid] = useState(false);
+  const [allIsValid, setAllIsValid] = useState(false)
   useEffect(() => {
     setAllIsValid(
-        nameIsvalid && accIsvalid && monthIsvalid && yearIsvalid && cvvIsvalid
-      )
-} , [nameIsvalid, accIsvalid, monthIsvalid, yearIsvalid, cvvIsvalid])
-
+      nameIsvalid && accIsvalid && monthIsvalid && yearIsvalid && cvvIsvalid
+    )
+  }, [nameIsvalid, accIsvalid, monthIsvalid, yearIsvalid, cvvIsvalid])
 
   const onSubmitHandler = (event) => {
     event.preventDefault()

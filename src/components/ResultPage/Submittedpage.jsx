@@ -1,14 +1,14 @@
-import classes from './SubmittedPage.module.css'
-import checkmark from '../assets/images/icons8-checkmark.svg'
-import { useContext } from 'react'
-import FormContext from '../store/form-context'
+import classes from "./SubmittedPage.module.css"
+import checkmark from "../assets/images/icons8-checkmark.svg"
+import { useContext } from "react"
+import FormContext from "../../store/form-context"
 
 export default function SubmittedPage() {
   const { formData, updateFormData } = useContext(FormContext)
-  
+
   const submitHandler = (event) => {
-    event.preventDefault();
-    updateFormData('submitted', false)
+    event.preventDefault()
+    updateFormData("submitted", false)
   }
 
   return (
@@ -20,7 +20,9 @@ export default function SubmittedPage() {
         <h1>Thank You</h1>
         <p>We've added your card details</p>
       </div>
-      <button type='submit' className={classes.btn} onClick={submitHandler}>Continue</button>
+      <button type="submit" className={classes.btn} onClick={submitHandler}>
+        Continue
+      </button>
     </div>
   )
 }
