@@ -161,6 +161,7 @@ const UserForm = () => {
             onChange={nameValueChangeHandler}
             onBlur={nameBlurHandler}
             hasError={nameHasError}
+            placeholder='e.g. John Wick'
           />
           <p className={classes.error}>
             {nameHasError
@@ -179,6 +180,7 @@ const UserForm = () => {
             onChange={accValueChangeHandler}
             onBlur={accBlurHandler}
             hasError={accHasError}
+            placeholder = 'e.g. 1234 5678 2354 3452'
           />
           <p className={classes.error}>
             {accHasError ? (!accValue ? "Can't be blank" : "Invalid Name") : ""}
@@ -197,6 +199,8 @@ const UserForm = () => {
                 min={0}
                 max={12}
                 hasError={monthHasError}
+                placeholder='MM'
+                isDate={true}
               />
               <Input
                 type="number"
@@ -207,6 +211,8 @@ const UserForm = () => {
                 min={0}
                 max={99}
                 hasError={yearHasError}
+                placeholder='YY'
+                isDate = {true}
               />
             </div>
             <p className={classes.error}>
@@ -228,6 +234,7 @@ const UserForm = () => {
               min={0}
               max={999}
               hasError={cvvHasError}
+              placeholder='e.g. 123'
             />
             <p className={classes.error}>
               {cvvHasError

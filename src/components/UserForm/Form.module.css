@@ -29,8 +29,7 @@ gap: 5px;
 
 .inp-container input {
   box-sizing: border-box;
-  padding: 5px;
-  padding-left: 10px;
+  padding: 10px;
   font-size: 18px;
 }
 

@@ -1,9 +1,14 @@
 .input{
+  font-family: 'Inter';
+  font-weight: 500;
+  letter-spacing: 1px;
+  color: rgb(62, 60, 60);
   border: 1.5px solid rgba(128, 128, 128, 0.500);
   border-radius: 0.5rem;
   font-size: 1.5rem;
   outline: none;
   transition: 0.5s ease-out;
+  width: 100%;
 }
 
 .input:focus{
@@ -12,4 +17,12 @@
 
 .error{
   border: 1.5px solid rgba(255, 0, 0, 0.500);
+}
+
+.notdate::-webkit-outer-spin-button {
+    display:none;
+}
+
+.notdate::-webkit-inner-spin-button {
+    display:none;
 }

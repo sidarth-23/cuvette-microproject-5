@@ -12,10 +12,11 @@ const useInput = (validateValue, field, maxlength, isText = false) => {
 
   const valueChangeHandler = (event) => {
     const char = event.target.value
+    console.log(char);
     if (char.length <= maxlength) {
       if (isText && !/^[A-Za-z\s]*$/.test(char)) return
-      else if (isNaN(char)) return
-      setEnteredValue(char)
+      else if (!isText && isNaN(char)) return
+      setEnteredValue(char.toUpperCase())
     }
   }
 

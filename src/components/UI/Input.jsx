@@ -2,21 +2,27 @@ import classes from './Input.module.css'
 
 export default function Input(props) {
   const hasError = props.hasError;
+  const isDate = props.isDate;
+  console.log(props.name, isDate);
 
-  const inputClasses = hasError ? `${classes.input} ${classes.error}` : `${classes.input}`
+  const defaultClass = isDate ? `${classes.input}` : `${classes.input} ${classes.notdate}`
+  const inputClasses = hasError ? `${defaultClass} ${classes.error}` : `${defaultClass} `
 
   if (props.type === 'number' && props.name !== 'accNo') {
     return (
-      <input
-        type={props.type}
-        name={props.name}
-        value={props.value}
-        onChange={props.onChange}
-        onBlur={props.onBlur}
-        min={props.min}
-        max={props.max}
-        className={inputClasses}
-      />
+      <div>
+        <input
+          type={props.type}
+          name={props.name}
+          value={props.value}
+          onChange={props.onChange}
+          onBlur={props.onBlur}
+          min={props.min}
+          max={props.max}
+          className={inputClasses}
+          placeholder={props.placeholder}
+        />
+      </div>
     )
   }
 
@@ -28,6 +34,7 @@ export default function Input(props) {
       onChange={props.onChange}
       onBlur={props.onBlur}
       className={inputClasses}
+      placeholder={props.placeholder}
     />
   )
 }
