@@ -1,17 +1,22 @@
 import { useState, useContext } from "react"
 import FormContext from "../store/form-context"
 
-const useInput = (validateValue, field) => {
+const useInput = (validateValue, field, maxlength, isText = false) => {
   const formCtx = useContext(FormContext)
 
-  const [enteredValue, setEnteredValue] = useState(formCtx[field])
+  const [enteredValue, setEnteredValue] = useState(formCtx[field] || "")
   const [isTouch, setIsTouch] = useState(false)
 
   const valueIsValid = validateValue(enteredValue)
   const hasError = !valueIsValid && isTouch
 
   const valueChangeHandler = (event) => {
-    setEnteredValue(event.target.value)
+    const char = event.target.value
+    if (char.length <= maxlength) {
+      if (isText && !/^[A-Za-z\s]*$/.test(char)) return
+      else if (isNaN(char)) return
+      setEnteredValue(char)
+    }
   }
 
   const inputBlurHandler = () => {

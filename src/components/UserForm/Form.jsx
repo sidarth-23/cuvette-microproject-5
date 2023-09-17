@@ -79,7 +79,7 @@ const UserForm = () => {
     valueChangeHandler: nameValueChangeHandler,
     inputBlurHandler: nameBlurHandler,
     reset: nameReset,
-  } = useInput(nameValidate, "name")
+  } = useInput(nameValidate, "name", 40, true)
 
   const {
     value: accValue,
@@ -88,7 +88,7 @@ const UserForm = () => {
     valueChangeHandler: accValueChangeHandler,
     inputBlurHandler: accBlurHandler,
     reset: accReset,
-  } = useInput(accValidate, "accNo")
+  } = useInput(accValidate, "accNo", 16)
 
   const {
     value: monthValue,
@@ -97,7 +97,7 @@ const UserForm = () => {
     valueChangeHandler: monthValueChangeHandler,
     inputBlurHandler: monthBlurHandler,
     reset: monthReset,
-  } = useInput(monthValidate, "validMonth")
+  } = useInput(monthValidate, "validMonth", 3)
 
   const {
     value: yearValue,
@@ -106,7 +106,7 @@ const UserForm = () => {
     valueChangeHandler: yearValueChangeHandler,
     inputBlurHandler: yearBlurHandler,
     reset: yearReset,
-  } = useInput(yearValidate, "validYear")
+  } = useInput(yearValidate, "validYear", 2)
 
   const {
     value: cvvValue,
@@ -115,7 +115,7 @@ const UserForm = () => {
     valueChangeHandler: cvvValueChangeHandler,
     inputBlurHandler: cvvBlurHandler,
     reset: cvvReset,
-  } = useInput(cvvValidate, "cvv")
+  } = useInput(cvvValidate, "cvv", 2)
 
   const [allIsValid, setAllIsValid] = useState(false)
   useEffect(() => {

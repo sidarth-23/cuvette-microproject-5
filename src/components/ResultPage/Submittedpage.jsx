@@ -1,10 +1,10 @@
 import classes from "./SubmittedPage.module.css"
-import checkmark from "../assets/images/icons8-checkmark.svg"
+import checkmark from "../../assets/images/icons8-checkmark.svg"
 import { useContext } from "react"
 import FormContext from "../../store/form-context"
 
 export default function SubmittedPage() {
-  const { formData, updateFormData } = useContext(FormContext)
+  const { updateFormData } = useContext(FormContext)
 
   const submitHandler = (event) => {
     event.preventDefault()
