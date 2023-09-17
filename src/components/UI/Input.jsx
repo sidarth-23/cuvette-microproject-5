@@ -3,7 +3,6 @@ import classes from './Input.module.css'
 export default function Input(props) {
   const hasError = props.hasError;
   const isDate = props.isDate;
-  console.log(props.name, isDate);
 
   const defaultClass = isDate ? `${classes.input}` : `${classes.input} ${classes.notdate}`
   const inputClasses = hasError ? `${defaultClass} ${classes.error}` : `${defaultClass} `
