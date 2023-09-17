@@ -97,7 +97,7 @@ const UserForm = () => {
     valueChangeHandler: monthValueChangeHandler,
     inputBlurHandler: monthBlurHandler,
     reset: monthReset,
-  } = useInput(monthValidate, "validMonth", 3)
+  } = useInput(monthValidate, "validMonth", 2)
 
   const {
     value: yearValue,
@@ -115,7 +115,7 @@ const UserForm = () => {
     valueChangeHandler: cvvValueChangeHandler,
     inputBlurHandler: cvvBlurHandler,
     reset: cvvReset,
-  } = useInput(cvvValidate, "cvv", 2)
+  } = useInput(cvvValidate, "cvv", 3)
 
   const [allIsValid, setAllIsValid] = useState(false)
   useEffect(() => {
